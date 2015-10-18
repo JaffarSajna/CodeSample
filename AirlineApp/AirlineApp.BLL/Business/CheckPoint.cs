@@ -35,7 +35,7 @@ namespace AirlineApp.BLL
                 foreach (string filePath in files)
                 {
                     FileInfo info = new FileInfo(filePath);
-                    var outputFolderName = string.Format(@"{0}\{1}", outputFolderPath, info.Name);
+                    var outputFolderName = string.Format(@"{0}\Report_{1}", outputFolderPath, info.Name);
 
                     var travelDetail = this.GetAirTravelData(filePath);
 
