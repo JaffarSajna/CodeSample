@@ -48,7 +48,7 @@ namespace AirlineApp.BLL
 
                     var report = this.GetSummaryReport(travelDetail);
 
-                    if (outputFolderPath.IsValidPath() || string.IsNullOrEmpty(report))
+                    if (!outputFolderPath.IsValidPath() || string.IsNullOrEmpty(report))
                     {
                         //Log
                         Console.WriteLine(string.Format(AirlineConstants.InvalidOutputPathErrorMessage, report));
