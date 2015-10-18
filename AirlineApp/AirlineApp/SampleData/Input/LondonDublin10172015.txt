@@ -1,0 +1,10 @@
+add route Londan Dublin 100 150 75
+add aircraft Gulfstream-G550 8
+add general mark 35
+add general Tom 15
+add general Tom1 15
+add airline trevor 54
+add loyalty alan 65 50 false false
+add loyalty suy 21 40 true false
+add loyalty suye 56 100 false true
+add general jaffar 29
