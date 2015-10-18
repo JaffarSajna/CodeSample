@@ -19,37 +19,7 @@ namespace AirlineApp
                 string outputFolderPath = dataFolders.GetPathValue(AirlineConstants.Output);
 
                 checkPoint.ProcessAirTravelData(inputFolderPath, outputFolderPath);
-                #region oldcode
-                //if (string.IsNullOrEmpty(inputFolderPath)) throw new Exception(AirlineConstants.InValidPathErrorMessage);
-
-                //string[] files = Directory.GetFiles(inputFolderPath);
-
-                //foreach (string filePath in files)
-                //{
-                //    FileInfo info = new FileInfo(filePath);
-                //    var outputFolderName = string.Format(@"{0}\{1}", outputFolderPath, info.Name);
-
-                //    checkPoint.GetAirTravelDetails(filePath)
-                //        .ForEach(travelDetail =>
-                //        {
-                //            var report = checkPoint.GetSummaryReport(travelDetail);
-
-                //            if (string.IsNullOrEmpty(outputFolderPath) || string.IsNullOrEmpty(report))
-                //            {
-                //                Console.WriteLine(string.Format(AirlineConstants.InValidOutputPathErrorMessage, report));
-                //                return;
-
-                //            }
-
-                //            using (StreamWriter sw = new StreamWriter(outputFolderName))
-                //            {
-                //                Console.WriteLine(string.Format(AirlineConstants.SuccessMessage, report, outputFolderName));
-                //                sw.WriteLine(report);
-                //            }
-                //            reports.Add(report);
-                //        });
-                //}
-                #endregion
+                
             }
             catch (CustomException ex)
             {
